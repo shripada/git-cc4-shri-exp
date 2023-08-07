@@ -1,4 +1,5 @@
 // This module is going to  contain the add, subtract, multiply and divide functions
+
 /**
  * Adds given two numbers and returns the result (JSDoc documentation)
  * @param {number} a
