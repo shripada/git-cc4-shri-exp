@@ -28,3 +28,11 @@ function testAdd() {
 function subtract(a, b) {
   return a - b;
 }
+
+function power(a, b) {
+  let product = a;
+  for (let i = 0; i < b; i++) {
+    product = product * product;
+  }
+  return product;
+}
