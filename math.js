@@ -29,6 +29,12 @@ function subtract(a, b) {
   return a - b;
 }
 
+/**
+ * This will compute the result by raising number a to the power of b in decimal system.
+ * @param {number} a the base number
+ * @param {number} b the power value to raise.
+ * @returns The result.
+ */
 function power(a, b) {
   let product = a;
   for (let i = 0; i < b; i++) {
