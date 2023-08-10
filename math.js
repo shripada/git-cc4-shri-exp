@@ -35,16 +35,16 @@ function subtract(a, b) {
  * @param {number} b the power value to raise.
  * @returns The result.
  */
-function power(a, b) {
+function power(base, exponent) {
   // pre conditions
-  assert(typeof a === 'number');
-  assert(typeof b === 'number');
-  if (a === 0 || b === 0) {
+  assert(typeof base === 'number');
+  assert(typeof exonent === 'number');
+  if (base === 0 || exponent === 0) {
     return 0;
   }
 
-  let product = a;
-  for (let i = 0; i < b; i++) {
+  let product = base;
+  for (let i = 0; i < exponent; i++) {
     product = product * product;
   }
   return product;
