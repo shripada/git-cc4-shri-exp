@@ -38,7 +38,7 @@ function subtract(a, b) {
 function power(base, exponent) {
   // pre conditions
   assert(typeof base === 'number');
-  assert(typeof exonent === 'number');
+  assert(typeof exponent === 'number');
   if (base === 0 || exponent === 0) {
     return 0;
   }
