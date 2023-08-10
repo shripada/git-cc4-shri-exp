@@ -36,6 +36,13 @@ function subtract(a, b) {
  * @returns The result.
  */
 function power(a, b) {
+  // pre conditions
+  assert(typeof a === 'number');
+  assert(typeof b === 'number');
+  if (a === 0 || b === 0) {
+    return 0;
+  }
+
   let product = a;
   for (let i = 0; i < b; i++) {
     product = product * product;
