@@ -28,3 +28,24 @@ function testAdd() {
 function subtract(a, b) {
   return a - b;
 }
+
+/**
+ * This will compute the result by raising number a to the power of b in decimal system.
+ * @param {number} a the base number
+ * @param {number} b the power value to raise.
+ * @returns The result.
+ */
+function power(base, exponent) {
+  // pre conditions
+  assert(typeof base === 'number');
+  assert(typeof exponent === 'number');
+  if (base === 0 || exponent === 0) {
+    return 0;
+  }
+
+  let product = base;
+  for (let i = 0; i < exponent; i++) {
+    product = product * product;
+  }
+  return product;
+}
