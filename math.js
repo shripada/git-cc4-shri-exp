@@ -29,7 +29,7 @@ function testAdd() {
  * This function computes difference of a and b
  * @param {number} a 
  * @param {number} b 
- * @returns difference of a and b
+ * @returns result of a-b
  */
 function subtract(a, b) {
   return a - b;
