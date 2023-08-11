@@ -79,7 +79,11 @@ function fibonacciSequence(n) {
   return sequence;
 }
 
-
+/**
+ * Funtion to check if number is even or odd
+ * @param {number} num 
+ * @returns 'even' if number is even else 'odd'
+ */
 function oddEven(num){
   if(num%2===0) return 'even'
   return 'odd';
