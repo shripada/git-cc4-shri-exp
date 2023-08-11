@@ -78,3 +78,9 @@ function fibonacciSequence(n) {
 
   return sequence;
 }
+
+
+function oddEven(num){
+  if(num%2===0) return 'even'
+  return 'odd';
+}
