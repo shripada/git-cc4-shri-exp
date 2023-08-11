@@ -79,6 +79,13 @@ function fibonacciSequence(n) {
   return sequence;
 }
 
+/**
+ * is Prime Function
+ * @param {number} number 
+ * returns boolean.
+ */
+
+
 function isPrimeFunction(number){
 
 
