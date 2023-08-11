@@ -27,12 +27,10 @@ function testAdd() {
 }
 /**
  * This function calculates the subtraction of a and b.
- * @param {number} a 
- * @param {number} b 
+ * @param {number} a
+ * @param {number} b
  * @returns number
  */
-
-
 
 function subtract(a, b) {
   return a - b;
@@ -62,7 +60,7 @@ function power(base, exponent) {
 /**
  * This function returns n fibonacci numbers
  * @param {number} n count of fibonnaci numbers
- * @returns array of n fibonacci numbers 
+ * @returns array of n fibonacci numbers
  */
 function fibonacciSequence(n) {
   if (n <= 0) {
@@ -84,52 +82,60 @@ function fibonacciSequence(n) {
 
 /**
  * is Prime Function
- * @param {number} number 
+ * @param {number} number
  * returns boolean.
  */
 
+function isPrimeFunction(number) {
+  let isPrime = true;
 
-function isPrimeFunction(number){
+  // check if number is equal to 1
+  if (number === 1) {
+    console.log('1 is neither prime nor composite number.');
+  }
 
-
-let isPrime = true;
-
-// check if number is equal to 1
-if (number === 1) {
-    console.log("1 is neither prime nor composite number.");
-}
-
-// check if number is greater than 1
-else if (number > 1) {
-
+  // check if number is greater than 1
+  else if (number > 1) {
     // looping through 2 to number-1
     for (let i = 2; i < number; i++) {
-        if (number % i == 0) {
-            isPrime = false;
-            break;
-        }
+      if (number % i == 0) {
+        isPrime = false;
+        break;
+      }
     }
 
     if (isPrime) {
-        console.log(`${number} is a prime number`);
+      console.log(`${number} is a prime number`);
     } else {
-        console.log(`${number} is a not prime number`);
+      console.log(`${number} is a not prime number`);
     }
-}
+  }
 
-// check if number is less than 1
-else {
-    console.log("The number is not a prime number.");
-}
-
+  // check if number is less than 1
+  else {
+    console.log('The number is not a prime number.');
+  }
 }
 
 /**
  * Funtion to check if number is even or odd
- * @param {number} num 
+ * @param {number} num
  * @returns 'even' if number is even else 'odd'
  */
-function oddEven(num){
-  if(num%2===0) return 'even'
+function oddEven(num) {
+  if (num % 2 === 0) return 'even';
   return 'odd';
+}
+
+/**
+ * Finds the sum of numbers in the given array.
+ * @param {Array<number>} numbers
+ * @returns sum of numbers
+ */
+function sum(numbers) {
+  let total = 0;
+  for (let num of numbers) {
+    total += num;
+  }
+  return;
 }
