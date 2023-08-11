@@ -26,11 +26,14 @@ function testAdd() {
   assert(expected === divide(10, 5), 'dividing 10 by 2 must be 5'); // invariant
 }
 /**
- * This function computes difference of a and b
+ * This function calculates the subtraction of a and b.
  * @param {number} a 
  * @param {number} b 
- * @returns difference of a and b
+ * @returns number
  */
+
+
+
 function subtract(a, b) {
   return a - b;
 }
