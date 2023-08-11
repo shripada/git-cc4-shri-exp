@@ -25,6 +25,12 @@ function testAdd() {
   const expected = 5;
   assert(expected === divide(10, 5), 'dividing 10 by 2 must be 5'); // invariant
 }
+/**
+ * This function computes difference of a and b
+ * @param {number} a 
+ * @param {number} b 
+ * @returns difference of a and b
+ */
 function subtract(a, b) {
   return a - b;
 }
@@ -51,7 +57,7 @@ function power(base, exponent) {
 }
 
 /**
- * 
+ * This function returns n fibonacci numbers
  * @param {number} n count of fibonnaci numbers
  * @returns array of n fibonacci numbers 
  */
